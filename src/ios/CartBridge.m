@@ -5,13 +5,13 @@
 - (void)addGoodsToCart:(CDVInvokedUrlCommand *)command
 {
 
-    NSString* msg = [NSString string]
+    NSString* msg = [NSString string];
 
     CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
                                messageAsString:msg];
 
-    [self success:result callbackId:callbackId];
+    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
 @end
