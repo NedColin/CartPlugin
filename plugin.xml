@@ -12,7 +12,7 @@
   <asset src="www/Cart.js" target="js/Cart.js"/>
 
   <js-module src="www/Cart.js" name="Cart">
-    <clobbers target="hello" />
+    <clobbers target="Cart" />
   </js-module>
 
   <platform name="android">
